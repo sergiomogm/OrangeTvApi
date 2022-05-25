@@ -3,7 +3,6 @@ console.clear();
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const {user , pass, bbdd} = require('dotenv').config()
 const mongoose = require("mongoose");
 
 /* let conectar = async () =>

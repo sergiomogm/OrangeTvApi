@@ -1,5 +1,6 @@
 console.clear();
 
+require('dotenv').config().parsed
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -21,7 +22,7 @@ conectar(); */
 
 let conectar = async () =>
   await mongoose.connect(
-    `mongodb+srv://${user}:${pass}@cluster0.yrjoi.mongodb.net/${bbdd}?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.user}:${process.env.pass}@cluster0.yrjoi.mongodb.net/${process.env.bbdd}?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

@@ -9,6 +9,11 @@ pero esta subida a mi vercel, podrás acceder a ella a través del siguiente enl
 
 [Apivercel](https://orange-tv-api.vercel.app/)
 
+Para pedirle los datos a la api solo debes añadir /Slider, /Peliculas o /Destacados al final del enlace según los valores a los que desees acceder
+
+
+¡Espero que la disfrutes 🎉!
+
 
 ## Autor
 

@@ -6,20 +6,6 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 
-/* let conectar = async () =>
-  await mongoose.connect(
-    "mongodb://localhost:27017/OrangeTv",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    },
-    () => {
-      console.log("conectado");
-    }
-  );
-
-conectar(); */
-
 let conectar = async () =>
   await mongoose.connect(
     `mongodb+srv://${process.env.user}:${process.env.pass}@cluster0.yrjoi.mongodb.net/${process.env.bbdd}?retryWrites=true&w=majority`,
